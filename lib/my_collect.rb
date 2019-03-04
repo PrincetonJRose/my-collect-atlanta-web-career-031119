@@ -1,8 +1,9 @@
 def my_collect(arr)
   num = 0
+  modded = []
   while num != arr.size
-    yield(arr[num])
+    modded.push(yield(arr[num]))
     num += 1
   end
-  return arr
+  return modded
 end
